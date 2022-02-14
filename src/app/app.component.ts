@@ -24,4 +24,12 @@ export class AppComponent {
   addVote(quotation: Quotation, value: number) {
     quotation.votes += value
   }
+
+  bestQuotations() {
+    return this.quotations.sort( (a, b) => { return b.votes - a.votes } ).slice(0, 3)
+  }
+
+  worstQuotations() {
+    return this.quotations.sort( (a, b) => { return a.votes - b.votes } ).slice(0, 3)
+  }
 }
