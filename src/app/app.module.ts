@@ -6,13 +6,17 @@ import { FormsModule } from '@angular/forms';
 import { NavbarComponent } from './navbar/navbar.component';
 import { RankingComponent } from './ranking/ranking.component';
 import { FormComponent } from './form/form.component';
+import { VoteButtonsComponent } from './vote-buttons/vote-buttons.component';
+import { ListComponent } from './list/list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     RankingComponent,
-    FormComponent
+    FormComponent,
+    VoteButtonsComponent,
+    ListComponent
   ],
   imports: [
     BrowserModule,
